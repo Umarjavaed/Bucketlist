@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My Business Bucket List</h1>
+    <div id="login">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password">
+        
+        <button onclick="login()">Login</button>
+        <p id="login-message"></p>
+    </div>
+    <div id="content" style="display: none;">
+        <h2>Add a Business Idea</h2>
+        
+        <label for="idea-name">Business Idea Name</label>
+        <input type="text" id="idea-name" placeholder="Business Idea Name">
+        
+        <label for="idea-description">Description</label>
+        <textarea id="idea-description" placeholder="Description"></textarea>
+        
+        <label for="expected-revenue">Expected Revenue</label>
+        <input type="text" id="expected-revenue" placeholder="Expected Revenue">
+        
+        <label for="investment">Investment</label>
+        <input type="text" id="investment" placeholder="Investment">
+        
+        <button onclick="addIdea()">Add Idea</button>
+        <h2>Business Ideas</h2>
+        <ul id="ideas-list"></ul>
+    </div>
+    <div id="footer">
+        <p>Umer Javaid | Business Ideas</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

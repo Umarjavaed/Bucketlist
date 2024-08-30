@@ -1,0 +1,230 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(8, 59, 201), #a1b8f8);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#login, #content {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    max-width: 90%;
+    width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#login:hover, #content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#login {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea, button {
+    display: block;
+    width: calc(100% - 24px);
+    margin: 0 auto 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(135, 109, 252);
+    box-shadow: 0 0 5px rgba(240, 106, 110, 0.5);
+}
+
+input[type="text"], input[type="password"] {
+    height: 44px;
+}
+
+textarea {
+    height: 140px;
+    resize: vertical;
+    overflow-y: auto; /* Adds scrollbar if text overflows */
+    word-wrap: break-word; /* Ensures long words break and wrap within the box */
+}
+
+button {
+    background: rgb(85, 124, 231);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #5f73e6;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: #675ee2;
+    transform: translateY(0);
+}
+
+#login-message {
+    color: #556df5;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* List Item Formatting */
+/* List Item Formatting */
+li {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    word-wrap: break-word; /* Ensures long words break and wrap within the box */
+    text-align: left; /* Align text to the left */
+}
+
+li div {
+    margin-bottom: 10px;
+}
+
+li div strong {
+    display: block;
+    color: rgb(64, 103, 211);
+    margin-bottom: 5px; /* Space between label and content */
+}
+
+
+li:hover {
+    background: #fafafa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #login, #content {
+        padding: 15px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #login, #content {
+        padding: 10px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+/* Footer Style */
+#footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
+
+#footer p {
+    margin: 0;
+    text-align: right;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    #footer {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
